@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_white_back"
+    tools:context=".recycler_item_details">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image1_view"
+            android:layout_width="292dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="52dp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/home_icon"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="0.75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:text="الاسم"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/share_button" />
+
+        <TextView
+            android:id="@+id/text2_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:text="الموقع"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text1_view" />
+
+        <TextView
+            android:id="@+id/text3_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:text="السعر"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text2_view" />
+
+
+        <TextView
+            android:id="@+id/text4_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:text="تليفون"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text3_view" />
+
+        <ImageView
+            android:id="@+id/call_button"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="88dp"
+            android:autofillHints="#fff"
+            android:background="@drawable/contact_us_icon"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1_view" />
+
+        <ImageView
+            android:id="@+id/share_button"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:autofillHints="#fff"
+            android:background="@drawable/ic_menu_share"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/favorite_button"
+            app:layout_constraintStart_toEndOf="@+id/call_button"
+            app:layout_constraintTop_toBottomOf="@+id/image1_view" />
+
+        <ImageView
+            android:id="@+id/favorite_button"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="80dp"
+            android:autofillHints="#fff"
+            android:background="@drawable/favorite_icon"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_360sdp">
+
+            <TextView
+                android:id="@+id/text5_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:text="التفاصيل"
+                android:textColor="#673AB7"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="549dp" />
+        </ScrollView>
+
+
+</RelativeLayout>

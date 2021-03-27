@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_white_back"
+    tools:context=".user_details">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image1_view"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_220sdp"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:src="@drawable/home_icon"
+            app:civ_border_width="0.60dp"
+            app:civ_border_color="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/text1_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_15sdp"
+            android:gravity="center"
+            android:textColor="#673AB7"
+            android:text="الاسم"
+            android:textSize="25sp"/>
+
+
+        <TextView
+            android:id="@+id/text2_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:textColor="#673AB7"
+            android:layout_marginTop="20dp"
+            android:text="الموقع"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/text3_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:textColor="#673AB7"
+            android:layout_marginTop="20dp"
+            android:text="السعر"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/text4_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:layout_marginTop="20dp"
+            android:text="السعر"
+            android:textColor="#673AB7"
+            android:textSize="25sp"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/show_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:text="ال api"
+                android:textSize="15sp"/>
+        </ScrollView>
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/slider_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            app:fillColor="#fff"
+            app:pageColor="#000"
+            app:radius="@dimen/_6sdp"
+            app:slideInterval="3000"
+            app:strokeColor="#000"
+            app:strokeWidth="@dimen/_1sdp"
+            app:autoPlay="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

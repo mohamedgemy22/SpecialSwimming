@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_swim"
+    tools:context=".login">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/logo_login_img"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/logo_swim" />
+
+        <EditText
+            android:id="@+id/username_edt"
+            android:layout_width="@dimen/_175sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/username"
+            android:fontFamily="@font/nizarbbc"
+            android:gravity="center"
+            android:hint="اسم المستخدم"
+            android:textAlignment="center"
+            android:textColor="#5A5A5A"
+            android:textColorHint="#5A5A5A"
+            android:textSize="@dimen/_16ssp" />
+
+        <EditText
+            android:id="@+id/passwrd_edt"
+            android:layout_width="@dimen/_175sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/password"
+            android:fontFamily="@font/nizarbbc"
+            android:gravity="center"
+            android:hint="كلمة المرور"
+            android:textAlignment="center"
+            android:textColor="#5A5A5A"
+            android:textColorHint="#5A5A5A"
+            android:textSize="@dimen/_16ssp" />
+
+
+        <Button
+            android:id="@+id/login_but"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginStart="@dimen/_53sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/button_sh_orange"
+            android:fontFamily="@font/nizarbbc"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:shadowDx="@android:integer/config_shortAnimTime"
+            android:text="دخول"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="@dimen/_16ssp" />
+
+        <Button
+            android:id="@+id/new_user_but"
+            android:layout_width="@dimen/_175sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:background="@drawable/gradient_shape"
+            android:fontFamily="@font/nizarbbc"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:shadowDx="@android:integer/config_shortAnimTime"
+            android:text="تسجيل حساب جديد"
+            android:textColor="#fff"
+            android:textSize="@dimen/_16ssp" />
+
+
+        <ImageView
+            android:id="@+id/social_img"
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/social_splash"
+            android:fontFamily="@font/nizarbbc"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:shadowDx="@android:integer/config_shortAnimTime"
+            android:text="دخول بحساب فيس بوك"
+            android:textColor="#fff"
+            android:textSize="@dimen/_16ssp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

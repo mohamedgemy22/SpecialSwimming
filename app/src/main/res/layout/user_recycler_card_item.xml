@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grey_back"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/gradient_item">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image_itemcard"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/home_icon"
+            app:civ_border_width="0.60dp"
+            app:civ_border_color="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/text1_itemcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-87dp"
+            android:layout_toEndOf="@id/text2_itemcard"
+            android:padding="10dp"
+            android:text="@string/qersh"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2_itemcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_itemcard"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-47dp"
+            android:layout_toEndOf="@id/image_itemcard"
+            android:padding="10dp"
+            android:text="@string/programer"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text3_itemcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_itemcard"
+            android:layout_marginStart="163dp"
+            android:layout_marginTop="-49dp"
+            android:layout_toEndOf="@id/image_itemcard"
+            android:padding="10dp"
+            android:text="@string/price"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text4_itemcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_itemcard"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="-91dp"
+            android:layout_toEndOf="@id/image_itemcard"
+            android:padding="10dp"
+            android:text="@string/price"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

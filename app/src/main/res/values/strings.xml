@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">swimmig_schole_api</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="الرئيسية">home</string>
+    <string name="المفضلة">favorite</string>
+    <string name="المدربين">coaches</string>
+    <string name="البروفايل">profile</string>
+    <string name="اتصل">contact us</string>
+    <string name="the_time_of_swimming_sport">the_time_of_swimming_sport</string>
+    <string name="qersh" />
+    <string name="programer">programmer</string>
+    <string name="price">price</string>
+    <string name="home_fragment">home_frag</string>
+    <string name="menu_home">menu_home</string>
+    <string name="menu_gallery">menu_gallery</string>
+    <string name="menu_slideshow">menu_slideshow</string>
+    <string name="menu_tools">menu_tools</string>
+    <string name="menu_share">menu_share</string>
+    <string name="menu_send">menu_send</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="search_view_hint">search_here</string>
+    <string name="search">Search..</string>
+    <string name="favorite_fragment">favorite_fragment</string>
+    <string name="communicate">Communicate</string>
+</resources>

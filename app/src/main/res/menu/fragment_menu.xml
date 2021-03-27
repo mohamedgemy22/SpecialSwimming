@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_nav"
+        android:title="@string/الرئيسية"
+        android:icon="@drawable/home_icon"/>
+
+    <item
+        android:id="@+id/favorite_nav"
+        android:title="@string/المفضلة"
+        android:icon="@drawable/favorite_icon"/>
+    <item
+        android:id="@+id/coach_nav"
+        android:title="@string/المدربين"
+        android:icon="@drawable/settings_icon"/>
+
+    <item
+        android:id="@+id/profile_nav"
+        android:title="@string/البروفايل"
+        android:icon="@drawable/profile_icon"/>
+
+    <item
+        android:id="@+id/contactus_nav"
+        android:title="@string/اتصل"
+        android:icon="@drawable/contact_us_icon"/>
+
+</menu>

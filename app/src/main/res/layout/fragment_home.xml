@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.fragment_home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/slider_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_190sdp"
+            app:fillColor="#FECCC5"
+            app:pageColor="#EA90AD"
+            app:radius="@dimen/_5sdp"
+            app:slideInterval="3000"
+            app:strokeColor="#ca3787"
+            app:strokeWidth="@dimen/_1sdp"
+            app:autoPlay="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/coaches_but"
+            android:layout_width="155dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/coaches_icooo"
+            android:foreground="@drawable/ripple"
+            android:shadowDx="@android:integer/config_shortAnimTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slider_view" />
+
+        <ImageButton
+            android:id="@+id/pools_but"
+            android:layout_width="155dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/pools_iconn"
+            android:foreground="@drawable/ripple"
+            android:shadowDx="@android:integer/config_shortAnimTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slider_view" />
+
+        <ImageButton
+            android:id="@+id/traning_album_but"
+            android:layout_width="155dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/traning_album"
+            android:foreground="@drawable/ripple"
+            android:shadowDx="@android:integer/config_shortAnimTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coaches_but" />
+
+        <ImageButton
+            android:id="@+id/instruc_but"
+            android:layout_width="155dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/swim_instc"
+            android:foreground="@drawable/ripple"
+            android:shadowDx="@android:integer/config_shortAnimTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pools_but" />
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/fr2_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_133sdp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instruc_but" />
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/loading_view"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="140dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fr2_recycler_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instruc_but"
+            app:layout_constraintVertical_bias="1.0"
+            app:mk_color="#ED6692"
+            app:mk_type="FivePulse" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</FrameLayout>

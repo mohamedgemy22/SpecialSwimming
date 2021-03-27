@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_coach">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/error_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text=""
+            />
+
+        <EditText
+            android:id="@+id/card_brand_edttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="coach_name"
+            />
+
+        <EditText
+            android:id="@+id/card_model_edttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:text="coach_location"
+            />
+        <EditText
+            android:id="@+id/coach_price_edttxt"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:text="coach_price"
+            />
+        <EditText
+            android:id="@+id/coach_phone_edttxt"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:text="coach_price"
+            />
+        <EditText
+            android:id="@+id/coach_experience_edttxt"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:text="coach_price"
+            />
+        <Button
+            android:id="@+id/LoadPicture_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:text="Load Picture" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="397dp"
+            android:layout_height="234dp"
+            android:padding="15dp"
+            android:src="@color/design_default_color_primary" />
+
+
+        <Button
+            android:id="@+id/but1_txt"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:background="@drawable/round_but"
+            android:text="home_fragment" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

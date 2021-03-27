@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:layout_width="@dimen/_105sdp"
+    android:layout_height="@dimen/_115sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_105sdp"
+        android:layout_height="@dimen/_115sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:foreground="@drawable/ripple"
+        android:shadowDx="@android:integer/config_shortAnimTime"
+        android:background="@drawable/gradient_shape">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_itemcard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/coach_img"
+            app:civ_border_color="#ca3787"
+            app:civ_border_width="0.60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1_itemcard"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toEndOf="@id/text2_itemcard"
+            android:gravity="center"
+            android:text="qersh"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_itemcard" />
+
+        <TextView
+            android:id="@+id/text2_itemcard"
+            android:layout_width="112dp"
+            android:layout_height="19dp"
+            android:layout_below="@id/image_itemcard"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toEndOf="@id/image_itemcard"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/programer"
+            android:textSize="@dimen/_7ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text1_itemcard" />
+
+        <TextView
+            android:id="@+id/text3_itemcard"
+            android:layout_width="85dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/image_itemcard"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/image_itemcard"
+            android:gravity="center"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:text="@string/price"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text2_itemcard" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
